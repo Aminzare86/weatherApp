@@ -1,6 +1,5 @@
 ﻿'use strict';
 
-
 	var icons = new Skycons(),
 			list = [
 				"clear-day", "clear-night", "partly-cloudy-day",
