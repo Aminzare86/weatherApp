@@ -56,6 +56,7 @@ pre {
 	height: auto;
 	width: 60%;
 	box-shadow: 10px 10px 5px #888888;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #kdate {
@@ -88,7 +89,7 @@ pre {
 
 #toDay {
 	float: left;
-	margin-left: 40px;
+	margin-left: 15px;
 	padding-right: 15px;
 }
 
@@ -97,17 +98,18 @@ pre {
 }
 
 #yourLocation {
-	margin-left: 50px;
+	margin: 10px 0px 10px 70px;
 }
 
 #weatherIcon {
-	margin-left: 69px;
+	margin: 15px 10px 15px 60px;
 }
 
 #currentTemp {
 	float: left;
 	font-size: 72px;
-	padding: 0px 30px 0px 10px
+	padding: 0px 30px 0px 10px;
+	margin-top: 10px;
 }
 
 #default_page_link {
@@ -115,9 +117,10 @@ pre {
 }
 
 #windSpeed {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 #weatherHumiditi {
 	margin-bottom: 10px;
+	margin-top: 10px;
 }

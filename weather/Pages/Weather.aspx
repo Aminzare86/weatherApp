@@ -6,6 +6,7 @@
 <html>
 <head>
 	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="../Content/App.css" rel="stylesheet" />
 	<script src="../Scripts/jquery-3.1.1.min.js"></script>
 	<script src="../Scripts/moment.min.js"></script>
@@ -19,7 +20,7 @@
 						<div id="yourLocation"></div>
 						<div id="toDay"></div>
 						<div id="timeNow"></div>
-						<div> <canvas id="weatherIcon" width="64" height="64"></canvas></div>
+						<div> <canvas id="weatherIcon" width="120" height="120"></canvas></div>
 						<div id="summaryToday"></div>
 						<div id="currentTemp"></div>
 						<div id="windSpeed"></div>
