@@ -123,3 +123,24 @@
 		//// want to remove one altogether? no problem:
 		//skycons.remove("icon2");
 
+
+function manageQueryStringParameter(paramToRetrieve) {
+    var params =
+    document.URL.split("?")[1].split("&");
+    var strParams = "";
+    for (var i = 0; i < params.length; i = i + 1) {
+        var singleParam = params[i].split("=");
+        if (singleParam[0] == paramToRetrieve) {
+            return singleParam[1];
+        }
+    }
+}
+
+var pagesUrl = appWebUrl + '/Pages/Default.aspx';
+$('a#default_page_link').attr('href', appWebUrl);
+
+var hostWebUrl = decodeURIComponent(manageQueryStringParameter('SPHostUrl'));
+var appWebUrl = decodeURIComponent(manageQueryStringParameter('SPAppWebUrl'));
+
+// change link to app url
+$('a#default_page_link').attr('href', appWebUrl);
