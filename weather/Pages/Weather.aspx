@@ -12,6 +12,8 @@
 	<script src="../Scripts/moment.min.js"></script>
 	<script src="../Scripts/moment-with-locales.min.js"></script>
 	<script src="../Scripts/skycons.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 	
 </head>
 <body>
