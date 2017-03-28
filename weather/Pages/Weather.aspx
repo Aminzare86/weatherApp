@@ -24,7 +24,7 @@
 						<div id="currentTemp"></div>
 						<div id="windSpeed"></div>
 						<div id="weatherHumiditi"></div>
-						<a href="Default.aspx" target="_blank">Reminder</a>
+						<a id="default_page_link" href="Default.aspx" target="_blank">Reminder</a>
 						
 					</div>
 				</div>
