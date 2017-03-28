@@ -27,7 +27,7 @@
 					var cityLok = loK.substring(loK.lastIndexOf("/") + 1);
 					var wIcon = data.currently.icon;
 					//	.locationstring.split('/').pop();
-					$('#currentTemp').html(data.currently.temperature.toFixed(0));
+					$('#currentTemp').html(data.currently.temperature.toFixed(0)+'<span id="cantigrader">c</span>');
 					$('#toDay').html(day);
 					$('#yourLocation').html(cityLok);
 					$('#weatherIcon').html(wIcon);
