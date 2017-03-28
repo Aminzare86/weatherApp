@@ -34,7 +34,6 @@
 					$('#weatherIcon').html(wIcon);
 					$('#windSpeed').html('windSpeed ' + data.currently.windSpeed);
 					$('#weatherHumiditi').html('Humiditi ' + data.currently.humidity);
-					$('#timeNow').html(tid);
 					$('#summaryToday').html(data.currently.summary);
 					if (wIcon == "clear-day") {
 						var skycons = new Skycons({ "color": "Yellow" });
@@ -97,7 +96,14 @@
 		});
 		//moment script
 		var day = moment().format('dddd');
-		var tid = moment().format('LTS');
+		function displayTime() {
+			var time = moment().format(' HH:mm:ss');
+			$('#timeNow').text(time);
+			setTimeout(displayTime, 1000);
+		}
+		$(document).ready(function () {
+			displayTime();
+		});
 
 //........................
 		//var skycons = new Skycons({ "color": "pink" });
