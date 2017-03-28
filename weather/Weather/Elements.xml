@@ -14,13 +14,12 @@
           Type="string"
           WebBrowsable="true"
           WebDescription="Location of the weather"
-          RequiresDesignerPermission="true"
+          RequiresDesignerPermission="false"
           WebCategory="Weather Location"
-          WebDisplayName="Add your location of the city or country you want to get the weather of"
+          WebDisplayName="MyLocation"
           DefaultValue="Stockholm"
                 >
       </Property>
     </Properties>
-
   </ClientWebPart>
 </Elements>
