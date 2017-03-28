@@ -15,6 +15,8 @@
     <!-- Add your CSS styles to the following file -->
 	<link href="../Content/App.css" rel="stylesheet" />
     <!-- Add your JavaScript to the following file -->
+
+	<script src="../Scripts/moment.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
 </asp:Content>
 
@@ -68,13 +70,15 @@
 		items.push("<ul id='" + "kulist" + "'>");
 
 		$(results).each(function () {
-			var formattedEventDate = moment(this.EventDate).format("MMM  <br>  DD");
+			var formattedEventDate = moment(this.EventDate).format("MMM DD");
 			items.push('<li id="' + 'klist' + '">' +
 				// this.Title +
 				"<div id='" + "kdate" + "' href=\"" + hostweburl + "/blog/Lists/Posts/Post.aspx?ID=" + this.ID + "\" target=\"_blank\">" + formattedEventDate + "</div>" +
 				"<div id='" + "kDes" + "' href=\"" + hostweburl + "/blog/Lists/Posts/Post.aspx?ID=" + this.ID + "\" target=\"_blank\">" + this.Description + "</div>" +
 
 				'</li>');
+			
+			
 		});
 
 		items.push("</ul");
@@ -99,8 +103,12 @@
 				return singleParam[1];
 		}
 	}
+	
     </script>
 	  <div><strong>Latest blog posts</strong></div>
       <div id="listResult"></div>
-
+	<div id="test1"></div>
+	<div id="test2"></div>
+	
+	
 </asp:Content>

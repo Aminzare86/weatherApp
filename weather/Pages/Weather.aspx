@@ -9,8 +9,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="../Content/App.css" rel="stylesheet" />
 	<script src="../Scripts/jquery-3.1.1.min.js"></script>
+	<script src="../Scripts/jQueryUI.js"></script>
+	<script src="../Scripts/jquery.dataTables.min.js"></script>
+	<script src="../Scripts/momentTimeZone.js"></script>
 	<script src="../Scripts/moment.min.js"></script>
 	<script src="../Scripts/moment-with-locales.min.js"></script>
+	<script src="../Scripts/moment-with-locales.js"></script>
+
 	<script src="../Scripts/skycons.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
@@ -31,6 +36,8 @@
 						
 					</div>
 				</div>
+
+
 	<script src="../Scripts/App.js"></script>
 </body>
 </html>
