@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-/*
+
 function getQueryStringParameter(urlParameterKey) {
     var params = document.URL.split('?')[1].split('&');
     var strParams = '';
@@ -37,7 +37,7 @@ function getLatitudeLongitude(callback, address) {
     }
 }
 getLatitudeLongitude(showResult);
-*/
+
 
 	var icons = new Skycons(),
 			list = [
