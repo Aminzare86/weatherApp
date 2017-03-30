@@ -318,7 +318,7 @@ getLatitudeLongitude(showResult);
 						var tmpotime1 = data.hourly.data[0].temperature.toFixed(0);					
 						if (icontime1 == "clear-day") {
 							var skycons = new Skycons({ "color": "Yellow" });
-							skycons.add("dicon3", Skycons.CLEAR_DAY);
+							skycons.add("oh", Skycons.CLEAR_DAY);
 							skycons.play();
 						}
 						if (icontime1 == "clear-night") {
@@ -375,7 +375,7 @@ getLatitudeLongitude(showResult);
 						var tmpotime2 = data.hourly.data[1].temperature.toFixed(0);
 						if (icontime2 == "clear-day") {
 							var skycons = new Skycons({ "color": "Yellow" });
-							skycons.add("dicon3", Skycons.CLEAR_DAY);
+							skycons.add("th", Skycons.CLEAR_DAY);
 							skycons.play();
 						}
 						if (icontime2 == "clear-night") {
@@ -428,6 +428,122 @@ getLatitudeLongitude(showResult);
 						$("#tht").html(tmpotime2);
 					}
 					twoTime();
+					function treeTime() {
+						var icontime3 = data.hourly.data[2].icon;
+						var tmpotime3 = data.hourly.data[2].temperature.toFixed(0);
+						if (icontime3 == "clear-day") {
+							var skycons = new Skycons({ "color": "Yellow" });
+							skycons.add("trh", Skycons.CLEAR_DAY);
+							skycons.play();
+						}
+						if (icontime3 == "clear-night") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("trh", Skycons.CLEAR_NIGHT);
+							skycons.play();
+						}
+						if (icontime3 == "partly-cloudy-day") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("trh", Skycons.PARTLY_CLOUDY_DAY);
+							skycons.play();
+						}
+						if (icontime3 == "partly-cloudy-night") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("trh", Skycons.PARTLY_CLOUDY_NIGHT);
+							skycons.play();
+						}
+						if (icontime3 == "cloudy") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("trh", Skycons.CLOUDY);
+							skycons.play();
+						}
+						if (icontime3 == "rain") {
+							var skycons = new Skycons({ "color": "blue" });
+							skycons.add("trh", Skycons.RAIN);
+							skycons.play();
+						}
+						if (icontime3 == "sleet") {
+							var skycons = new Skycons({ "color": "blue" });
+							skycons.add("trh", Skycons.SLEET);
+							skycons.play();
+						}
+						if (icontime3 == "snow") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("trh", Skycons.SNOW);
+							skycons.play();
+						}
+						if (icontime3 == "wind") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("trh", Skycons.WIND);
+							skycons.play();
+						}
+						if (icontime3 == "fog") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("trh", Skycons.FOG);
+							skycons.play();
+						}
+
+						$("#trh").html(icontime3);
+						$("#trht").html(tmpotime3);
+					}
+					treeTime();
+					function fourTime() {
+						var icontime4 = data.hourly.data[3].icon;
+						var tmpotime4 = data.hourly.data[3].temperature.toFixed(0);
+						if (icontime4 == "clear-day") {
+							var skycons = new Skycons({ "color": "Yellow" });
+							skycons.add("fh", Skycons.CLEAR_DAY);
+							skycons.play();
+						}
+						if (icontime4 == "clear-night") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("fh", Skycons.CLEAR_NIGHT);
+							skycons.play();
+						}
+						if (icontime4 == "partly-cloudy-day") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("fh", Skycons.PARTLY_CLOUDY_DAY);
+							skycons.play();
+						}
+						if (icontime4 == "partly-cloudy-night") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("fh", Skycons.PARTLY_CLOUDY_NIGHT);
+							skycons.play();
+						}
+						if (icontime4 == "cloudy") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("fh", Skycons.CLOUDY);
+							skycons.play();
+						}
+						if (icontime4 == "rain") {
+							var skycons = new Skycons({ "color": "blue" });
+							skycons.add("fh", Skycons.RAIN);
+							skycons.play();
+						}
+						if (icontime4 == "sleet") {
+							var skycons = new Skycons({ "color": "blue" });
+							skycons.add("fh", Skycons.SLEET);
+							skycons.play();
+						}
+						if (icontime4 == "snow") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("fh", Skycons.SNOW);
+							skycons.play();
+						}
+						if (icontime4 == "wind") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("fh", Skycons.WIND);
+							skycons.play();
+						}
+						if (icontime4 == "fog") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("fh", Skycons.FOG);
+							skycons.play();
+						}
+
+						$("#fh").html(icontime4);
+						$("#fht").html(tmpotime4);
+					}
+					fourTime();
 					
 
 					//	.locationstring.split('/').pop();

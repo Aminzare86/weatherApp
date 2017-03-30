@@ -44,14 +44,14 @@
 						 <canvas id="th" width="30" height="30"></canvas>
 					 </div>
 					<div id="tht"></div>
-				  <%--  <div >
+				  <div >
 						 <canvas id="trh" width="30" height="30"></canvas>
 					 </div>
 					<div id="trht"></div>
-				   <div >
+				      <div >
 						 <canvas id="fh" width="30" height="30"></canvas>
 					 </div>
-					<div id="fht"></div>--%>
+					<div id="fht"></div>
 		       </div>
 	<script src="../Scripts/App.js"></script>
 </body>
