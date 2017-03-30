@@ -45,6 +45,7 @@ var location_adress = getQueryStringParameter('MyLocation');
 			icons.set(list[i], list[i]);
 		icons.play();
 		$(document).ready(function () {
+		//	moment.locale('sv');
 			var url = 'https://api.darksky.net/forecast/';
 			var apiKey = 'f27babc7a050d34e4825462e56e0eea0';
 			var unit = 'si';
@@ -361,7 +362,7 @@ var location_adress = getQueryStringParameter('MyLocation');
 							skycons.play();
 						}					
 						$("#oh").html(icontime1);
-						$("#oht").html(tmpotime1);				
+						$("#oht").html(tmpotime1 + "&#8451");				
 					}
 					onetime();
 					function twoTime() {
@@ -419,7 +420,7 @@ var location_adress = getQueryStringParameter('MyLocation');
 						}
 
 						$("#th").html(icontime2);
-						$("#tht").html(tmpotime2);
+						$("#tht").html(tmpotime2 + "&#8451");
 					}
 					twoTime();
 					function treeTime() {
@@ -477,7 +478,7 @@ var location_adress = getQueryStringParameter('MyLocation');
 						}
 
 						$("#trh").html(icontime3);
-						$("#trht").html(tmpotime3);
+						$("#trht").html(tmpotime3 + "&#8451");
 					}
 					treeTime();
 					function fourTime() {
@@ -535,7 +536,7 @@ var location_adress = getQueryStringParameter('MyLocation');
 						}
 
 						$("#fh").html(icontime4);
-						$("#fht").html(tmpotime4);
+						$("#fht").html(tmpotime4 + "&#8451");
 
 					}
 					fourTime();
