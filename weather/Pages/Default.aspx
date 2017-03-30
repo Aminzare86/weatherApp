@@ -119,7 +119,7 @@
 	      
 	  <div><strong>Latest blog posts</strong></div>
       <div id="listResult"></div>
-	<a href="https://ecusolna-8d428fa9a2d286.sharepoint.com/sites/amzaspo16-dev/weather/Lists/Quotes/AllItems.aspx">Gå till lista</a>
+	<a  href="https://ecusolna-8d428fa9a2d287.sharepoint.com/sites/amzaspo16-dev/weather/Lists/Quotes/AllItems.aspx" target=" _blank" >Gå till lista</a>
 		<script src="../Scripts/App.js"></script>
 	
 </asp:Content>

@@ -313,7 +313,121 @@ getLatitudeLongitude(showResult);
 					var loK = data.timezone;
 					var cityLok = loK.substring(loK.lastIndexOf("/") + 1);
 					var wIcon = data.currently.icon;
-					//.........................
+					function onetime() {
+						var icontime1 = data.hourly.data[0].icon;
+						var tmpotime1 = data.hourly.data[0].temperature.toFixed(0);					
+						if (icontime1 == "clear-day") {
+							var skycons = new Skycons({ "color": "Yellow" });
+							skycons.add("dicon3", Skycons.CLEAR_DAY);
+							skycons.play();
+						}
+						if (icontime1 == "clear-night") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("oh", Skycons.CLEAR_NIGHT);
+							skycons.play();
+						}
+						if (icontime1 == "partly-cloudy-day") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("oh", Skycons.PARTLY_CLOUDY_DAY);
+							skycons.play();
+						}
+						if (icontime1 == "partly-cloudy-night") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("oh", Skycons.PARTLY_CLOUDY_NIGHT);
+							skycons.play();
+						}
+						if (icontime1 == "cloudy") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("oh", Skycons.CLOUDY);
+							skycons.play();
+						}
+						if (icontime1 == "rain") {
+							var skycons = new Skycons({ "color": "blue" });
+							skycons.add("oh", Skycons.RAIN);
+							skycons.play();
+						}
+						if (icontime1 == "sleet") {
+							var skycons = new Skycons({ "color": "blue" });
+							skycons.add("oh", Skycons.SLEET);
+							skycons.play();
+						}
+						if (icontime1 == "snow") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("oh", Skycons.SNOW);
+							skycons.play();
+						}
+						if (icontime1 == "wind") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("oh", Skycons.WIND);
+							skycons.play();
+						}
+						if (icontime1 == "fog") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("oh", Skycons.FOG);
+							skycons.play();
+						}					
+						$("#oh").html(icontime1);
+						$("#oht").html(tmpotime1);				
+					}
+					onetime();
+					function twoTime() {
+						var icontime2 = data.hourly.data[1].icon;
+						var tmpotime2 = data.hourly.data[1].temperature.toFixed(0);
+						if (icontime2 == "clear-day") {
+							var skycons = new Skycons({ "color": "Yellow" });
+							skycons.add("dicon3", Skycons.CLEAR_DAY);
+							skycons.play();
+						}
+						if (icontime2 == "clear-night") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("th", Skycons.CLEAR_NIGHT);
+							skycons.play();
+						}
+						if (icontime2 == "partly-cloudy-day") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("th", Skycons.PARTLY_CLOUDY_DAY);
+							skycons.play();
+						}
+						if (icontime2 == "partly-cloudy-night") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("th", Skycons.PARTLY_CLOUDY_NIGHT);
+							skycons.play();
+						}
+						if (icontime2 == "cloudy") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("th", Skycons.CLOUDY);
+							skycons.play();
+						}
+						if (icontime2 == "rain") {
+							var skycons = new Skycons({ "color": "blue" });
+							skycons.add("th", Skycons.RAIN);
+							skycons.play();
+						}
+						if (icontime2 == "sleet") {
+							var skycons = new Skycons({ "color": "blue" });
+							skycons.add("th", Skycons.SLEET);
+							skycons.play();
+						}
+						if (icontime2 == "snow") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("th", Skycons.SNOW);
+							skycons.play();
+						}
+						if (icontime2 == "wind") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("th", Skycons.WIND);
+							skycons.play();
+						}
+						if (icontime2 == "fog") {
+							var skycons = new Skycons({ "color": "white" });
+							skycons.add("th", Skycons.FOG);
+							skycons.play();
+						}
+
+						$("#th").html(icontime2);
+						$("#tht").html(tmpotime2);
+					}
+					twoTime();
 					
 
 					//	.locationstring.split('/').pop();
