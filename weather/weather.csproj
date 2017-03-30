@@ -46,8 +46,22 @@
     <Content Include="Content\dataTables.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\jqueryUI.css" />
+    <Content Include="Core\Columns\QuoteAuthor\Elements.xml" />
+    <Content Include="Core\Columns\QuoteText\Elements.xml" />
+    <Content Include="Core\ContentTypes\Quote\Elements.xml" />
+    <Content Include="Core\Elements.xml" />
+    <Content Include="Core\Lists\Quotes\Elements.xml" />
+    <Content Include="Core\Lists\Quotes\QuotesInstance\Elements.xml" />
+    <Content Include="Core\Lists\Quotes\Schema.xml" />
+    <Content Include="Core\Sample.txt" />
     <Content Include="Images\background.png" />
+    <Content Include="Instructions\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
     <Content Include="Pages\Weather.aspx" />
+    <Content Include="RibbonCustomAction1\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery.dataTables.min.js" />
     <Content Include="Scripts\jQueryUI.js" />
@@ -60,6 +74,27 @@
     <Content Include="Weather\Elements.xml">
       <OpcRelationship>feature-elementmanifest</OpcRelationship>
     </Content>
+    <None Include="Core\Columns\QuoteAuthor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73ade1fd-fb3e-44cb-806d-b075dba7dc5d}</SharePointProjectItemId>
+    </None>
+    <None Include="Core\Columns\QuoteText\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9f6a57b6-a774-48fd-a0fb-5eafdaac4835}</SharePointProjectItemId>
+    </None>
+    <None Include="Core\ContentTypes\Quote\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{657a713d-0375-4cd9-93ec-9a0e8337ecf9}</SharePointProjectItemId>
+    </None>
+    <None Include="Core\Lists\Quotes\QuotesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0330741a-ae8e-464e-b87c-5de88a001445}</SharePointProjectItemId>
+    </None>
+    <None Include="Core\Lists\Quotes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6bca49c5-3c06-4279-ba92-ceb32d442b03}</SharePointProjectItemId>
+    </None>
+    <None Include="Core\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1a86815b-c3fa-46b5-a67d-ee162e653cbb}</SharePointProjectItemId>
+    </None>
+    <None Include="Instructions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c102a341-992e-448d-809e-456266ef4447}</SharePointProjectItemId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2502373d-1fe2-427b-9fd6-103988064c93}</SharePointProjectItemId>
@@ -69,6 +104,9 @@
     </Content>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="RibbonCustomAction1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{704a30b2-859b-440e-951a-4cdc74846402}</SharePointProjectItemId>
+    </None>
     <None Include="Weather\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{87c29259-4b84-41ef-9fc3-56d41538cf65}</SharePointProjectItemId>
     </None>
@@ -121,6 +159,7 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

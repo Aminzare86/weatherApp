@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a2fc9427-8add-460b-8c07-d6cdd6e8a30e}"
+       Name="QuoteText"
+       DisplayName="Quote Text"
+       Type="note"
+       RichText="FALSE"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

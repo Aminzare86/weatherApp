@@ -49,14 +49,14 @@ pre {
 		}
 
 .weatherWrapper {
-	background-image: url('../Images/background.png');
 	padding: 10px;
-	color: white;
 	font-size: 20px;
 	height: auto;
 	width: 60%;
-	box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #e3e0e0;
 	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background-image: url('../Images/background.png');
 }
 
 #kdate {
@@ -125,7 +125,18 @@ pre {
 	margin-top: 10px;
 }
 #cantigrader {
-	font-size: 35px;
+	font-size: 25px;
 	position: relative;
 	top: -30px;
+}
+.col-sm-2 {
+	box-shadow: 10px 10px 5px #e3e0e0;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background-image: url('../Images/background.png');
+	margin: 10px;
+	min-height: 195px;
+}
+h4 {
+	margin-left: 35px;
 }

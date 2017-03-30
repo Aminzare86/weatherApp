@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="8d0105a7-2a58-4f11-8cd9-e676abc51e6f.Instructions"
+                RegistrationType="List"
+                RegistrationId="{$ListId:Shared Documents;}"
+                Location="EditControlBlock"
+                Sequence="10001"
+                Title="Till sidan för instruktioner">
+    <!-- 
+    Update the Url below to the page you want the custom action to use.
+    Start the URL with the token ~remoteAppUrl if the page is in the
+    associated web project, use ~appWebUrl if page is in the app project.
+    -->
+    <UrlAction Url="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;SPListItemId={ItemId}&amp;SPListId={ListId}" />
+  </CustomAction>
+</Elements>
