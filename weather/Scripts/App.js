@@ -1,42 +1,42 @@
 ﻿'use strict';
 
 
-function getQueryStringParameter(urlParameterKey) {
-    var params = document.URL.split('?')[1].split('&');
-    var strParams = '';
-    for (var i = 0; i < params.length; i = i + 1) {
-        var singleParam = params[i].split('=');
-        if (singleParam[0] == urlParameterKey)
-            return decodeURIComponent(singleParam[1]);
-    }
-}
+//function getQueryStringParameter(urlParameterKey) {
+//    var params = document.URL.split('?')[1].split('&');
+//    var strParams = '';
+//    for (var i = 0; i < params.length; i = i + 1) {
+//        var singleParam = params[i].split('=');
+//        if (singleParam[0] == urlParameterKey)
+//            return decodeURIComponent(singleParam[1]);
+//    }
+//}
 
-var location_adress = getQueryStringParameter('MyLocation');
+//var location_adress = getQueryStringParameter('MyLocation');
 
-// show result
-function showResult(result) {
-    var latii = result.geometry.location.lat();
-    var longii = result.geometry.location.lng();
-    console.log(latii + " " + longii);
-}
+//// show result
+//function showResult(result) {
+//    var latii = result.geometry.location.lat();
+//    var longii = result.geometry.location.lng();
+//    console.log(latii + " " + longii);
+//}
 
-// google look up latitude
-function getLatitudeLongitude(callback, address) {
-    // If adress is not supplied, use default value 'Ferrol, Galicia, Spain'
-    address = address || 'Stockholm, Sweden';
-    // Initialize the Geocoder
-    geocoder = new google.maps.Geocoder();
-    if (geocoder) {
-        geocoder.geocode({
-            'address': address
-        }, function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                callback(results[0]);
-            }
-        });
-    }
-}
-getLatitudeLongitude(showResult);
+//// google look up latitude
+//function getLatitudeLongitude(callback, address) {
+//    // If adress is not supplied, use default value 'Ferrol, Galicia, Spain'
+//    address = address || 'Stockholm, Sweden';
+//    // Initialize the Geocoder
+//    geocoder = new google.maps.Geocoder();
+//    if (geocoder) {
+//        geocoder.geocode({
+//            'address': address
+//        }, function (results, status) {
+//            if (status == google.maps.GeocoderStatus.OK) {
+//                callback(results[0]);
+//            }
+//        });
+//    }
+//}
+//getLatitudeLongitude(showResult);
 
 
 	var icons = new Skycons(),
