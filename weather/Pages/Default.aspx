@@ -33,6 +33,8 @@
 		var scriptbase = hostweburl + "/_layouts/15/";
 		// Load the js files and continue to the successHandler
 		$.getScript(scriptbase + "SP.RequestExecutor.js", execCrossDomainRequest);
+		//link to costum list for all users
+		$("#linktolist").attr("href", hostweburl + "/weather/Lists/Quotes/AllItems.aspx");
 	});
 	// Function to prepare and issue the request to get SharePoint data
 	function execCrossDomainRequest() {
@@ -119,7 +121,12 @@
 	      
 	  <div><strong>Latest blog posts</strong></div>
       <div id="listResult"></div>
-	<a  href="https://ecusolna-8d428fa9a2d287.sharepoint.com/sites/amzaspo16-dev/weather/Lists/Quotes/AllItems.aspx" target=" _blank" >Gå till lista</a>
+	  <a id="linktolist" href="#">Link to list</a>
+
+
+	<%-- link to custom list with  my privet link and you have for every users in start of code
+	<a  href="https://ecusolna-8d428fa9a2d287.sharepoint.com/sites/amzaspo16-dev/weather/Lists/Quotes/AllItems.aspx" target=" _blank" >Gå till lista</a>--%>
+
 		<script src="../Scripts/App.js"></script>
 	
 </asp:Content>
