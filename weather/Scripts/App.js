@@ -1,44 +1,38 @@
 ﻿'use strict';
 
+function getQueryStringParameter(urlParameterKey) {
+    var params = document.URL.split('?')[1].split('&');
+    var strParams = '';
+    for (var i = 0; i < params.length; i = i + 1) {
+        var singleParam = params[i].split('=');
+        if (singleParam[0] == urlParameterKey)
+            return decodeURIComponent(singleParam[1]);
+    }
+}
 
-//function getQueryStringParameter(urlParameterKey) {
-//    var params = document.URL.split('?')[1].split('&');
-//    var strParams = '';
-//    for (var i = 0; i < params.length; i = i + 1) {
-//        var singleParam = params[i].split('=');
-//        if (singleParam[0] == urlParameterKey)
-//            return decodeURIComponent(singleParam[1]);
-//    }
+var location_adress = getQueryStringParameter('MyLocation');
+
+//geocoder = new google.maps.Geocoder();
+
+//function codeAddress() {
+
+//    //In this case it gets the address from an element on the page, but obviously you  could just pass it to the method instead
+//    var address = document.getElementById('address').value;
+
+//    geocoder.geocode({ 'address': address }, function (results, status) {
+//        if (status == google.maps.GeocoderStatus.OK) {
+
+//            //In this case it creates a marker, but you can get the lat and lng from the location.LatLng
+//            map.setCenter(results[0].geometry.location);
+//            var marker = new google.maps.Marker({
+//                map: map,
+//                position: results[0].geometry.location
+//            });
+//        } else {
+//            alert('Geocode was not successful for the following reason: ' + status);
+//        }
+//    });
 //}
-
-//var location_adress = getQueryStringParameter('MyLocation');
-
-//// show result
-//function showResult(result) {
-//    var latii = result.geometry.location.lat();
-//    var longii = result.geometry.location.lng();
-//    console.log(latii + " " + longii);
-//}
-
-//// google look up latitude
-//function getLatitudeLongitude(callback, address) {
-//    // If adress is not supplied, use default value 'Ferrol, Galicia, Spain'
-//    address = address || 'Stockholm, Sweden';
-//    // Initialize the Geocoder
-//    geocoder = new google.maps.Geocoder();
-//    if (geocoder) {
-//        geocoder.geocode({
-//            'address': address
-//        }, function (results, status) {
-//            if (status == google.maps.GeocoderStatus.OK) {
-//                callback(results[0]);
-//            }
-//        });
-//    }
-//}
-//getLatitudeLongitude(showResult);
-
-
 	var icons = new Skycons(),
 			list = [
 				"clear-day", "clear-night", "partly-cloudy-day",
