@@ -34,25 +34,40 @@
 						<div id="weatherHumiditi"></div>
 						<a id="default_page_link" href="Default.aspx" target="_blank">Reminder</a>
 					</div>		        
-				 </div>	
-	           <div class="weatherWrapper timerweather">
-					 <div >
-						 <canvas id="oh" width="30" height="30"></canvas>
-					 </div>
-					<div id="oht"></div>
-				  <div >
-						 <canvas id="th" width="30" height="30"></canvas>
-					 </div>
-					<div id="tht"></div>
-				  <div >
-						 <canvas id="trh" width="30" height="30"></canvas>
-					 </div>
-					<div id="trht"></div>
-				      <div >
-						 <canvas id="fh" width="30" height="30"></canvas>
-					 </div>
-					<div id="fht"></div>
-		       </div>
-	<script src="../Scripts/App.js"></script>
+				 </div>
+    <div class="weatherWrapper timerweather">
+        <div class="hour-box">
+            <div>
+                <canvas id="oh" width="30" height="30"></canvas>
+            </div>
+            <div id="oht"></div>
+        </div>
+
+        <div class="hour-box">
+            <div>
+                <canvas id="th" width="30" height="30"></canvas>
+            </div>
+            <div id="tht"></div>
+        </div>
+
+        <div class="hour-box">
+
+            <div>
+                <div class="hour-box">
+
+                    <canvas id="trh" width="30" height="30"></canvas>
+                </div>
+            </div>
+
+            <div id="trht"></div>
+        </div>
+        <div class="hour-box">
+            <div>
+                <canvas id="fh" width="30" height="30"></canvas>
+            </div>
+            <div id="fht"></div>
+        </div>
+    </div>
+    <script src="../Scripts/App.js"></script>
 </body>
 </html>

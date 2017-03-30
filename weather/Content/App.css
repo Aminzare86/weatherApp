@@ -140,3 +140,17 @@ pre {
 h4 {
 	margin-left: 35px;
 }
+.weatherWrapper.timerweather
+{
+    text-align: center;
+}
+.hour-box {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+}
+.thec{
+    font-size: 11px;
+    position: relative;
+    top: -10px;
+}

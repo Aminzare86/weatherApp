@@ -542,6 +542,7 @@
 
 						$("#fh").html(icontime4);
 						$("#fht").html(tmpotime4);
+
 					}
 					fourTime();
 					
@@ -694,3 +695,11 @@ var appWebUrl = decodeURIComponent(manageQueryStringParameter('SPAppWebUrl'));
 
 // change link to app url
 $('a#default_page_link').attr('href', appWebUrl);
+
+/*
+// add c to text
+$("div#oht").append("<span class='thec'>℃</div>");
+$("div#tht").append("<span class='thec'>℃</div>");
+$("div#trht").append("<span class='thec'>℃</div>");
+$("div#fht").append("<span class='thec'>℃</div>");
+*/
